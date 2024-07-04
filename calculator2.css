@@ -1,0 +1,70 @@
+body{
+  background-color: blue;
+}
+.outer-div {
+  border: 15px solid black;
+  border-radius: 25px;
+  width: 400px;
+  height: 400px;
+  background-color: rgb(228, 199, 155);
+}
+
+#display {
+  width: 85%;
+  margin-top: 30px;
+  text-align: end;
+  background-color: black;
+  border: 3px solid white;
+  padding: 15px 10px;
+  color: #24ae71;
+  filter: brightness(100%);
+  font-size: 1.5rem;
+}
+
+.display::placeholder {
+  color: #24ae71;
+  filter: brightness(100%);
+}
+
+table {
+  border-collapse: collapse;
+  border: none;
+  width: 380px;
+  margin-top: 30px;
+}
+table td {
+  border: none;
+}
+table td input {
+  height: 30px;
+  width: 50px;
+  margin-left: 4px;
+  border: 1px solid black;
+}
+.brown-background {
+  background-color: #360f10;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.black-background {
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.pink-background {
+  background-color: rgb(244, 7, 122);
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* form input {
+  transition: transform 0.2s;
+}
+form input:hover {
+  transform: scale(1.1);
+} */

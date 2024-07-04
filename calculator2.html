@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="calculator2.css" />
+  </head>
+  <body>
+    <center>
+      <div class="outer-div">
+        <form name="f">
+          <input type="text" value="" placeholder="0" class="display" name="display" id="display" />
+
+          <table border="3" align="center" cellpadding="8" cellspacing="10">
+            <tr>
+              <td>
+                <input
+                  class="brown-background"
+                  type="reset"
+                  value="C"
+                  onclick="performOperation('clr')"
+                />
+              </td>
+              <td>
+                <input
+                  class="brown-background"
+                  type="button"
+                  value="<--"
+                  onclick="performOperation('bks')"
+                />
+              </td>
+              <td>
+                <input
+                  class="brown-background"
+                  type="button"
+                  value="="
+                  onclick="performOperation('calculate')"
+                />
+              </td>
+              <td>
+                <input   class="pink-background" type="button" value="&#960" onclick="performOperation('pi')"/>
+              </td>
+              <td>
+                <input   class="pink-background" type="button" value="%" onclick="setOp(0)" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input
+                  class="black-background"
+                  type="button"
+                  value="7"
+                  onclick="setVal(7)"
+                />
+              </td>
+              <td>
+                <input
+                  class="black-background"
+                  type="button"
+                  value="8"
+                  onclick="setVal(8)"
+                />
+              </td>
+              <td>
+                <input
+                  class="black-background"
+                  type="button"
+                  value="9"
+                  onclick="setVal(9)"
+                />
+              </td>
+              <td>
+                <input   class="pink-background" type="button" value="X^" onclick="performOperation('power')" />
+              </td>
+              <td>
+                <input   class="pink-background" type="button" value="/" onclick="setOp(1)" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input
+                  class="black-background"
+                  type="button"
+                  value="4"
+                  onclick="setVal(4)"
+                />
+              </td>
+              <td>
+                <input
+                  class="black-background"
+                  type="button"
+                  value="5"
+                  onclick="setVal(5)"
+                />
+              </td>
+              <td>
+                <input
+                  class="black-background"
+                  type="button"
+                  value="6"
+                  onclick="setVal(6)"
+                />
+              </td>
+              <td>
+                <input  class="pink-background" type="button" value="ln" onclick="performOperation('log')" />
+              </td>
+              <td>
+                <input  class="pink-background" type="button" value="*" onclick="setOp(2)" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input
+                  class="black-background"
+                  type="button"
+                  value="1"
+                  onclick="setVal(1)"
+                />
+              </td>
+              <td>
+                <input
+                  class="black-background"
+                  type="button"
+                  value="2"
+                  onclick="setVal(2)"
+                />
+              </td>
+              <td>
+                <input
+                  class="black-background"
+                  type="button"
+                  value="3"
+                  onclick="setVal(3)"
+                />
+              </td>
+              <td>
+                <input  class="pink-background" type="button" value="&#8730" onclick="performOperation('sqrt')" />
+              </td>
+              <td>
+                <input  class="pink-background" type="button" value="-" onclick="setOp(3)" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input  class="pink-background" type="button" value="+-" onclick="performOperation('negPos')" />
+              </td>
+              <td>
+                <input
+                  class="black-background"
+                  type="button"
+                  value="0"
+                  onclick="setVal(0)"
+                />
+              </td>
+              <td>
+                <input  class="pink-background" type="button" value="." onclick="setOp(5)" />
+              </td>
+              <td>
+                <input  class="pink-background" type="button" value="X2" onclick="performOperation('x2')" />
+              </td>
+              <td>
+                <input  class="pink-background" type="button" value="+" onclick="setOp(4)" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input  class="pink-background" type="button" value="(" onclick="setOp(6)" />
+              </td>
+              <td>
+                <input  class="pink-background" type="button" value=")" onclick="setOp(7)" />
+              </td>
+              <td>
+                <input  class="pink-background" type="button" value="cos" onclick="performOperation('cos')" />
+              </td>
+              <td>
+                <input class="pink-background"type="button" value="sin" onclick="performOperation('sin')" />
+              </td>
+              <td>
+                <input class="pink-background"type="button" value="tan" onclick="performOperation('tan')" />
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </center>
+
+    <script src="calculator2.js"></script>
+  </body>
+</html>
